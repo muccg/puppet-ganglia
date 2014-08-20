@@ -33,7 +33,8 @@ host {
 }
 
 /* Feel free to specify as many udp_send_channels as you like.  Gmond
-   used to only support having a single channel */
+   used to only support having a single channel. 
+   == puppet == */
 <% ganglia_hosts.each do |ganglia_host| %>
 udp_send_channel {
   host = <%= ganglia_host %>
